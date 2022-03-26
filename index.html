@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <div class="container">
+      <div class="profile">
+        <div class="profile-header">
+          <div class="profile-picture">
+            <img src="images/image-jeremy.png" alt="" />
+          </div>
+          <div class="profile-name">
+            <span class="report-for"> Report for</span>
+            <span class="full-name"> Jeremy Robson</span>
+          </div>
+        </div>
+        <div class="profile-footer">
+          <ul class="time-span">
+            <li><a id="daily" class="btn daily" onclick="getAndRenderData('daily')">Daily</a></li>
+            <li><a id="weekly" class="btn weekly" onclick="getAndRenderData('weekly')" >Weekly</a></li>
+            <li><a id="monthly" class="btn monthly" onclick="getAndRenderData('monthly')">Monthly</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-wrapper" id="work">
+        <div class="data-wrapper">
+
+          <div class="sub-title">
+            <span class="activity"> Work</span>
+            <div class="dots"> 
+              <img src="images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+
+          <div class="hours-desc">
+            <span class="hours">
+              32hrs
+            </span>
+            <span class="desc">
+              Last Week - 36hrs
+            </span>
+          </div>
+
+          
+
+        </div>
+      </div>
+
+      <div class="card-wrapper" id="play">
+        <div class="data-wrapper">
+          <div class="sub-title">
+            <span class="activity"> Play</span>
+            <div class="dots"> 
+              <img src="images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+
+          <div class="hours-desc">
+            <span class="hours">
+              10hrs
+            </span>
+            <span class="desc">
+              Last Week - 8hrs
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-wrapper" id="study">
+        <div class="data-wrapper">
+          <div class="sub-title">
+            <span class="activity"> Study</span>
+            <div class="dots"> 
+              <img src="images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+
+          <div class="hours-desc">
+            <span class="hours">
+              4hrs
+            </span>
+            <span class="desc">
+              Last Week - 7hrs
+            </span>
+          </div>
+
+        </div>
+      </div>
+      <div class="card-wrapper" id="exercise">
+        <div class="data-wrapper">
+          <div class="sub-title">
+            <span class="activity"> Exercise </span>
+            <div class="dots"> 
+              <img src="images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+
+          <div class="hours-desc">
+            <span class="hours">
+              4hrs
+            </span>
+            <span class="desc">
+              Last Week - 5hrs
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-wrapper" id="social">
+        <div class="data-wrapper">
+          <div class="sub-title">
+            <span class="activity"> Social</span>
+            <div class="dots"> 
+              <img src="images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+
+          <div class="hours-desc">
+            <span class="hours">
+              5hrs
+            </span>
+            <span class="desc">
+              Last Week - 10hrs
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-wrapper" id="self-care">
+        <div class="data-wrapper">
+          <div class="sub-title">
+            <span class="activity"> Self Care</span>
+            <div class="dots"> 
+              <img src="images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+
+          <div class="hours-desc">
+            <span class="hours">
+              2hrs
+            </span>
+            <span class="desc">
+              Last Week - 2hrs
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        margin-top: 30px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Harsha Didde</a>.
+    </div>
+  </body>
+</html>
